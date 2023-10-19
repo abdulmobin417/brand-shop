@@ -1,0 +1,56 @@
+[
+  {
+    "name": "BMW",
+    "brand_logo": "https://i.ibb.co/6vbJLnD/BMW-svg.png",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/KzQPg7Z/bmw1-removebg-preview.png",
+      "https://i.ibb.co/3srVpqD/bmw2-removebg-preview.png",
+      "https://i.ibb.co/b6sbyMx/bmw3-removebg-preview.png"
+    ]
+  },
+  {
+    "name": "Toyota",
+    "brand_logo": "https://i.ibb.co/hy3WMWn/toyota-removebg-preview.png",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/GpspFfy/audi1-removebg-preview.png",
+      "https://i.ibb.co/sK9wtg7/audi2-removebg-preview.png",
+      "https://i.ibb.co/zhDbnSn/audi3-removebg-preview.png"
+    ]
+  },
+  {
+    "name": "Tesla",
+    "brand_logo": "https://i.ibb.co/4Pn9NkH/Tesla-logo.png",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/SQqVhjj/Tesla1-removebg-preview.png",
+      "https://i.ibb.co/qsf0pmb/Tesla2-removebg-preview.png",
+      "https://i.ibb.co/D91CHct/Tesla3-removebg-preview.png"
+    ]
+  },
+  {
+    "name": "Mercedes-Benz",
+    "brand_logo": "https://i.ibb.co/GxWxbz8/Mercedes.jpg",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/mNvkxZT/mer1-removebg-preview.png",
+      "https://i.ibb.co/JxJ1YY3/mer2-removebg-preview.png",
+      "https://i.ibb.co/4jMP9qf/mer3-removebg-preview.png"
+    ]
+  },
+  {
+    "name": "Honda",
+    "brand_logo": "https://i.ibb.co/VwjhFMk/honda.png",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/wYg3spX/Lambo1-removebg-preview.png",
+      "https://i.ibb.co/879VSJ9/Lambo2-removebg-preview.png",
+      "https://i.ibb.co/9TsTsZR/Lambo3-removebg-preview.png"
+    ]
+  },
+  {
+    "name": "Ford",
+    "brand_logo": "https://i.ibb.co/yPWGMHk/ford-removebg-preview.png",
+    "Advertisement_Imgs": [
+      "https://i.ibb.co/DQV3rTF/Hy1.png",
+      "https://i.ibb.co/wrhFJF9/Hy2.png",
+      "https://i.ibb.co/d0JrNB2/Hy3.png"
+    ]
+  }
+]
