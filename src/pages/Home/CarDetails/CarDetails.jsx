@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 const CarDetails = () => {
   const loadedCarDetails = useLoaderData();
 
+  //
+
   // console.log(loadedCarDetails);
   const { name, photo, ratings, price, _id, brand, category, description } =
     loadedCarDetails;
@@ -13,27 +15,24 @@ const CarDetails = () => {
   const { user } = useContext(AuthContext);
 
   const handleAddToCart = () => {
-    fetch(
-      "https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/carts",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          productId: _id,
-          productName: name,
-          productPhoto: photo,
-          productRating: ratings,
-          productPrice: price,
-          productBrand: brand,
-          productCategory: category,
-          quantity: 1,
-          userName: user?.displayName,
-          userEmail: user?.email,
-        }),
-      }
-    )
+    fetch("https://brand-shop-server-sand-two.vercel.app/carts", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        productId: _id,
+        productName: name,
+        productPhoto: photo,
+        productRating: ratings,
+        productPrice: price,
+        productBrand: brand,
+        productCategory: category,
+        quantity: 1,
+        userName: user?.displayName,
+        userEmail: user?.email,
+      }),
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId || data._id) {
@@ -71,8 +70,9 @@ const CarDetails = () => {
                 <div className="mb-10">
                   <h1 className="font-bold uppercase text-2xl mb-5">{name}</h1>
                   <p className="text-sm">{description}</p>
+                  <p className="my-1 font-bold">Ratings: {ratings}</p>
                 </div>
-                <div>
+                <div className="space-y-2">
                   <div className="inline-block align-bottom mr-5">
                     <span className="text-2xl leading-none align-baseline">
                       $
@@ -85,21 +85,21 @@ const CarDetails = () => {
                     </span>
                   </div>
                   <div className="inline-block align-bottom">
-                    <Link to={`/carDetails/${loadedCarDetails._id}`}>
-                      <button
-                        onClick={handleAddToCart}
-                        className="bg-yellow-300 dark:bg-gray-900 opacity-75 hover:opacity-100 text-yellow-900 dark:text-white hover:text-gray-900 rounded-full px-10 py-2 font-semibold"
-                      >
-                        <i className="mdi mdi-cart -ml-2 mr-2"></i> Add To Cart
-                      </button>
-                    </Link>
+                    {/* <Link to={`/carDetails/${loadedCarDetails._id}`}> */}
+                    <button
+                      onClick={handleAddToCart}
+                      className="bg-yellow-300 dark:bg-gray-900 opacity-75 hover:opacity-100 text-yellow-900 dark:text-white hover:text-gray-900 rounded-full px-10 py-2 font-semibold"
+                    >
+                      <i className="mdi mdi-cart -ml-2 mr-2"></i> Add To Cart
+                    </button>
+                    {/* </Link> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="space-x-8">
+        <div className="space-x-8 mb-4">
           <Link to={`/updateCar/${loadedCarDetails._id}`}>
             <button className="bg-black dark:bg-purple-600 mt-2 px-8 py-3 rounded-lg text-lg font-semibold text-white hover:bg-purple-600 dark:hover:bg-yellow-300">
               Update Car

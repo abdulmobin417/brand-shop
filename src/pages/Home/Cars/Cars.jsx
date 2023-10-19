@@ -24,8 +24,9 @@ const Cars = ({ car }) => {
           </div>
         </div>
         <div className="mt-auto">
-          <div className="mt-auto px-2">
+          <div className="mt-auto px-2 flex justify-between items-center">
             <p className="text-xl font-extrabold">Price: ${car.price}</p>
+            <p className="font-bold">Ratings: {car.ratings}</p>
           </div>
           <Link to={`/carDetails/${car._id}`}>
             <button className="bg-black dark:bg-purple-600 shadow-inner w-full mt-4 py-3 rounded-b-lg text-lg font-semibold text-white">

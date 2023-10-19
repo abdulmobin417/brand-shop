@@ -4,9 +4,7 @@ import Brand from "../Brand/Brand";
 const Brands = () => {
   const [brands, setBrands] = useState([]);
   useEffect(() => {
-    fetch(
-      "https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/brands"
-    )
+    fetch("https://brand-shop-server-sand-two.vercel.app/brands")
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);

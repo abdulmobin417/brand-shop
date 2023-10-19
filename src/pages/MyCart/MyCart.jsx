@@ -5,12 +5,15 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import Swal from "sweetalert2";
 import { toast } from "react-toastify";
 
+//
+
 const MyCart = () => {
   const [carts, setCarts] = useState([]);
   const { user } = useContext(AuthContext);
+
   useEffect(() => {
     fetch(
-      `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/carts?email=${user?.email}`
+      `https://brand-shop-server-sand-two.vercel.app/carts?email=${user?.email}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -29,12 +32,9 @@ const MyCart = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(
-          `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/carts/${id}`,
-          {
-            method: "DELETE",
-          }
-        )
+        fetch(`https://brand-shop-server-sand-two.vercel.app/carts/${id}`, {
+          method: "DELETE",
+        })
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {

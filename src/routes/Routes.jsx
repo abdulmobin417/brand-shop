@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/carDetails/${params.id}`
+            `https://brand-shop-server-sand-two.vercel.app/carDetails/${params.id}`
           ),
       },
       {
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/carDetails/${params.id}`
+            `https://brand-shop-server-sand-two.vercel.app/carDetails/${params.id}`
           ),
       },
       {
@@ -78,7 +78,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/brandDetails/${params.id}`
+            `https://brand-shop-server-sand-two.vercel.app/brandDetails/${params.id}`
           ),
       },
     ],

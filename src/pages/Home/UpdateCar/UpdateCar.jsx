@@ -29,7 +29,7 @@ const UpdateCar = () => {
 
     // send data to the server
     fetch(
-      `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/car/${loadedCarDetails._id}`,
+      `https://brand-shop-server-sand-two.vercel.app/car/${loadedCarDetails._id}`,
       {
         method: "PUT",
         headers: {

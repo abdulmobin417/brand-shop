@@ -9,13 +9,13 @@ const BrandDetails = () => {
 
   useEffect(() => {
     fetch(
-      `https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/car/${loadedBrand.name}`
+      `https://brand-shop-server-sand-two.vercel.app/car/${loadedBrand.name}`
     )
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, [loadedBrand]);
 
-  console.log(cars);
+  // console.log(cars);
 
   return (
     <div className="container mx-auto">

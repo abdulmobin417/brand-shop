@@ -2,9 +2,11 @@
 
 ## [ Live Link](https://brand-shop-06.web.app/)
 
+Vercel Deploy Link: [https://brand-shop-server-sand-two.vercel.app/](https://brand-shop-server-sand-two.vercel.app/)
+
 Server Private Repo Link: [https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-abdulmobin417](https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-abdulmobin417)
 
-Client Private Repo Link: [https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-abdulmobin417](https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-abdulmobin417)
+Client Private Repo Link: [https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-abdulmobin417](https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-abdulmobin417)
 
 ### Project 3 main key features are given below:
 

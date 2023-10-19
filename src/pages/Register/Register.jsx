@@ -88,16 +88,13 @@ const Register = () => {
 
     createUser(email, password)
       .then((res) => {
-        fetch(
-          "https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/users",
-          {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify(userInfo),
-          }
-        )
+        fetch("https://brand-shop-server-sand-two.vercel.app/users", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(userInfo),
+        })
           .then((res1) => res1.json())
           .then((data) => {
             console.log(data);

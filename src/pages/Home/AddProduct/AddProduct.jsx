@@ -23,16 +23,13 @@ const AddProduct = () => {
     };
 
     // send data to the server
-    fetch(
-      "https://brand-shop-server-cx9hc7o3u-abdul-mobins-projects.vercel.app/car",
-      {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(newCar),
-      }
-    )
+    fetch("https://brand-shop-server-sand-two.vercel.app/car", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCar),
+    })
       .then((res) => res.json())
       .then((data) => {
         // console.log(data);
