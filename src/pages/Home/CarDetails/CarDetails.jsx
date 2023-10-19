@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
 import { toast } from "react-toastify";
 
@@ -98,13 +98,6 @@ const CarDetails = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="space-x-8 mb-4">
-          <Link to={`/updateCar/${loadedCarDetails._id}`}>
-            <button className="bg-black dark:bg-purple-600 mt-2 px-8 py-3 rounded-lg text-lg font-semibold text-white hover:bg-purple-600 dark:hover:bg-yellow-300">
-              Update Car
-            </button>
-          </Link>
         </div>
       </div>
     </div>

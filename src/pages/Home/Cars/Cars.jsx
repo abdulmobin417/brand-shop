@@ -28,11 +28,18 @@ const Cars = ({ car }) => {
             <p className="text-xl font-extrabold">Price: ${car.price}</p>
             <p className="font-bold">Ratings: {car.ratings}</p>
           </div>
-          <Link to={`/carDetails/${car._id}`}>
-            <button className="bg-black dark:bg-purple-600 shadow-inner w-full mt-4 py-3 rounded-b-lg text-lg font-semibold text-white">
-              See Details
-            </button>
-          </Link>
+          <div className="flex justify-between items-center px-4 mb-4">
+            <Link to={`/carDetails/${car._id}`}>
+              <button className="bg-black dark:bg-purple-600 shadow-inner mt-4 px-4 py-3 rounded-lg text-lg font-semibold text-white">
+                See Details
+              </button>
+            </Link>
+            <Link to={`/updateCar/${car._id}`}>
+              <button className="border-2 border-black dark:border-purple-600 shadow-inner mt-4 px-8 py-3 rounded-lg text-lg font-semibold dark:text-white text-black">
+                Update
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

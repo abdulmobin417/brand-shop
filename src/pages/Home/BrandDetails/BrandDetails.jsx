@@ -35,7 +35,7 @@ const BrandDetails = () => {
       ) : (
         <div className="flex flex-col items-center mt-16 mb-24">
           <p className="text-center text-2xl py-4">
-            No Cars available in at this moment
+            No Cars available at this moment
           </p>
           <Link to="/">
             <button className="btn bg-[#d1a054] text-white hover:bg-gray-600">
