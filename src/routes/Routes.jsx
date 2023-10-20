@@ -10,6 +10,7 @@ import CarDetails from "../pages/Home/CarDetails/CarDetails";
 import BrandDetails from "../pages/Home/BrandDetails/BrandDetails";
 import UpdateCar from "../pages/Home/UpdateCar/UpdateCar";
 import MyCart from "../pages/MyCart/MyCart";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUs />,
       },
       {
         path: "/login",
